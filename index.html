@@ -3,114 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RushFACEIT - Соревновательные матчи Standoff 2</title>
+    <title>RushFACEIT - Competitive Standoff 2 Platform</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="stars"></div>
-    <div class="twinkling"></div>
+    <div class="grain"></div>
     
-    <div class="container">
-        <header class="header">
-            <div class="logo-container">
-                <h1 class="logo">🎮 RushFACEIT</h1>
-                <p class="tagline">Профессиональная платформа для Standoff 2</p>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">RushFACEIT</div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#modes">Modes</a>
+                <a href="#contact">Contact</a>
             </div>
-        </header>
+        </div>
+    </nav>
 
-        <main class="main-content">
-            <section class="hero">
-                <div class="hero-content">
-                    <h2 class="hero-title">Добро пожаловать в RushFACEIT!</h2>
-                    <p class="hero-description">
-                        Соревновательные матчи 2v2, 4v4 и 5v5 с системой ELO рейтинга, 
-                        банами карт, модерацией результатов и детальной статистикой.
-                    </p>
-                    <div class="features-grid">
-                        <div class="feature-card">
-                            <div class="feature-icon">⚔️</div>
-                            <h3>Матчмейкинг</h3>
-                            <p>Автоматический подбор игроков с ELO рейтингом</p>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon">🗺️</div>
-                            <h3>Баны карт</h3>
-                            <p>Капитаны банят карты по очереди</p>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon">👥</div>
-                            <h3>Командная игра</h3>
-                            <p>Создавай пати до 5 игроков</p>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon">📊</div>
-                            <h3>Статистика</h3>
-                            <p>Детальная история матчей со скриншотами</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="modes">
-                <h2 class="section-title">Игровые режимы</h2>
-                <div class="modes-container">
-                    <div class="mode-card">
-                        <div class="mode-number">2v2</div>
-                        <p>Быстрые матчи</p>
-                    </div>
-                    <div class="mode-card">
-                        <div class="mode-number">4v4</div>
-                        <p>Средние матчи</p>
-                    </div>
-                    <div class="mode-card">
-                        <div class="mode-number">5v5</div>
-                        <p>Полноценные матчи</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="cta-section">
-                <h2 class="section-title">Начни играть прямо сейчас!</h2>
-                <div class="cta-buttons">
-                    <a href="https://t.me/rushfaceitbot" class="cta-button primary" target="_blank">
-                        <span class="button-icon">🤖</span>
-                        Открыть бота
+    <main>
+        <section class="hero">
+            <div class="hero-background"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Competitive</span>
+                    <span class="title-line">Standoff 2</span>
+                    <span class="title-line">Platform</span>
+                </h1>
+                <p class="hero-subtitle">Professional matchmaking system with ELO rating, map bans, and detailed statistics</p>
+                <div class="hero-buttons">
+                    <a href="https://t.me/rushfaceitbot" class="btn btn-primary" target="_blank">
+                        <span>Start Playing</span>
+                        <div class="btn-shine"></div>
                     </a>
-                    <a href="https://t.me/rushfaceitback" class="cta-button secondary" target="_blank">
-                        <span class="button-icon">📢</span>
-                        Наш канал
+                    <a href="https://t.me/rushfaceitback" class="btn btn-secondary" target="_blank">
+                        <span>Join Channel</span>
                     </a>
                 </div>
-            </section>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+            </div>
+        </section>
 
-            <section class="maps">
-                <h2 class="section-title">Карты</h2>
-                <div class="maps-list">
-                    <span class="map-tag">Sandstone</span>
-                    <span class="map-tag">Province</span>
-                    <span class="map-tag">Zone 7</span>
-                    <span class="map-tag">Breeze</span>
-                    <span class="map-tag">Sakura</span>
-                    <span class="map-tag">Dune</span>
-                    <span class="map-tag">Rust</span>
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">Core Features</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-number">01</div>
+                        <h3>Matchmaking</h3>
+                        <p>Automatic player matching with ELO rating system</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-number">02</div>
+                        <h3>Map Bans</h3>
+                        <p>Captains ban maps alternately before match starts</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-number">03</div>
+                        <h3>Team Play</h3>
+                        <p>Create parties up to 5 players and play together</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-number">04</div>
+                        <h3>Statistics</h3>
+                        <p>Detailed match history with screenshots and analytics</p>
+                    </div>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
 
-        <footer class="footer">
+        <section id="modes" class="modes">
+            <div class="container">
+                <h2 class="section-title">Game Modes</h2>
+                <div class="modes-grid">
+                    <div class="mode-card">
+                        <div class="mode-header">
+                            <span class="mode-label">Quick</span>
+                        </div>
+                        <div class="mode-title">2v2</div>
+                        <p class="mode-desc">Fast-paced matches</p>
+                    </div>
+                    <div class="mode-card featured">
+                        <div class="mode-header">
+                            <span class="mode-label">Popular</span>
+                        </div>
+                        <div class="mode-title">4v4</div>
+                        <p class="mode-desc">Balanced gameplay</p>
+                    </div>
+                    <div class="mode-card">
+                        <div class="mode-header">
+                            <span class="mode-label">Competitive</span>
+                        </div>
+                        <div class="mode-title">5v5</div>
+                        <p class="mode-desc">Full team matches</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="maps-section">
+            <div class="container">
+                <h2 class="section-title">Available Maps</h2>
+                <div class="maps-grid">
+                    <div class="map-item">Sandstone</div>
+                    <div class="map-item">Province</div>
+                    <div class="map-item">Zone 7</div>
+                    <div class="map-item">Breeze</div>
+                    <div class="map-item">Sakura</div>
+                    <div class="map-item">Dune</div>
+                    <div class="map-item">Rust</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to compete?</h2>
+                    <p>Join thousands of players in competitive Standoff 2 matches</p>
+                    <a href="https://t.me/rushfaceitbot" class="btn btn-large" target="_blank">
+                        <span>Launch Bot</span>
+                        <div class="btn-shine"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
             <div class="footer-content">
-                <div class="creator">
-                    <p>👨‍💻 Создатель: <a href="https://t.me/huroryy" target="_blank">@huroryy</a></p>
+                <div class="footer-left">
+                    <div class="footer-logo">RushFACEIT</div>
+                    <p class="footer-desc">Professional competitive platform for Standoff 2</p>
                 </div>
-                <div class="links">
-                    <a href="https://t.me/rushfaceitbot" target="_blank">Бот</a>
-                    <span>•</span>
-                    <a href="https://t.me/rushfaceitback" target="_blank">Канал</a>
+                <div class="footer-right">
+                    <div class="footer-links">
+                        <a href="https://t.me/rushfaceitbot" target="_blank">Bot</a>
+                        <a href="https://t.me/rushfaceitback" target="_blank">Channel</a>
+                        <a href="https://t.me/huroryy" target="_blank">Creator</a>
+                    </div>
+                    <p class="footer-copy">© 2026 RushFACEIT. Created by @huroryy</p>
                 </div>
-                <p class="copyright">© 2026 RushFACEIT. Все права защищены.</p>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
