@@ -181,6 +181,74 @@ if (prefersReducedMotion.matches) {
 
 // Console easter egg
 console.log('%cRushFACEIT', 'font-size: 48px; font-weight: bold; background: linear-gradient(135deg, #FF4655, #00D9FF); -webkit-background-clip: text; -webkit-text-fill-color: transparent;');
-console.log('%cCompetitive Standoff 2 Platform', 'font-size: 16px; color: #A1A1AA;');
+console.log('%cCompetitive StandLeo Platform', 'font-size: 16px; color: #A1A1AA;');
 console.log('%cCreated by @huroryy', 'font-size: 12px; color: #FF4655;');
 
+// Create animated particles
+function createParticles() {
+    const particlesContainer = document.querySelector('.particles');
+    if (!particlesContainer) return;
+    
+    const particleCount = 50;
+    
+    for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        
+        const size = Math.random() * 4 + 1;
+        const startX = Math.random() * 100;
+        const startY = Math.random() * 100;
+        const duration = Math.random() * 20 + 10;
+        const delay = Math.random() * 5;
+        
+        particle.style.cssText = `
+            position: absolute;
+            width: ${size}px;
+            height: ${size}px;
+            background: ${Math.random() > 0.5 ? 'rgba(255, 70, 85, 0.6)' : 'rgba(0, 217, 255, 0.6)'};
+            border-radius: 50%;
+            left: ${startX}%;
+            top: ${startY}%;
+            animation: particleFloat ${duration}s ${delay}s infinite ease-in-out;
+            box-shadow: 0 0 ${size * 2}px ${Math.random() > 0.5 ? 'rgba(255, 70, 85, 0.5)' : 'rgba(0, 217, 255, 0.5)'};
+        `;
+        
+        particlesContainer.appendChild(particle);
+    }
+}
+
+// Add particle animation styles
+const particleStyle = document.createElement('style');
+particleStyle.textContent = `
+    .particles {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    @keyframes particleFloat {
+        0%, 100% {
+            transform: translate(0, 0) scale(1);
+            opacity: 0;
+        }
+        10% {
+            opacity: 1;
+        }
+        90% {
+            opacity: 1;
+        }
+        100% {
+            transform: translate(${Math.random() * 200 - 100}px, ${Math.random() * 200 - 100}px) scale(0);
+            opacity: 0;
+        }
+    }
+    
+    .particle {
+        filter: blur(1px);
+    }
+`;
+document.head.appendChild(particleStyle);
+
+// Initialize particles
+createParticles();
